@@ -1,7 +1,16 @@
 import React from "react";
+import { Card } from "./components/Card";
+import { Login } from "./components/Login";
+import { Navbar } from "./components/Navbar";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div>
+      <Navbar />
+      <Login />
+      <Card />
+    </div>
+  )
 }
 
 export default App;
