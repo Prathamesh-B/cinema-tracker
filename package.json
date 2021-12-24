@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm install && npm run react-build && node server",
-    "react-build": "cd client && npm install --dev && npm run build",
+    "react-build": "cd client && npm install && npm run build",
     "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
