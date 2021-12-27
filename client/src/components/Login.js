@@ -2,20 +2,24 @@ import React from 'react'
 
 export const Login = () => {
     return (
-        <div class="flex flex-col items-center justify-center w-screen h-screen bg-gray-200 text-gray-700" >
-            <h1 class="font-bold text-2xl">Welcome Back :)</h1>
-            <form class="flex flex-col bg-white rounded shadow-lg p-12 mt-12" action="">
-                <label class="font-semibold text-xs" for="usernameField">Username or Email</label>
-                <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text" />
-                <label class="font-semibold text-xs mt-3" for="passwordField">Password</label>
-                <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="password" />
-                <button class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700">Login</button>
-                <div class="flex mt-6 justify-center text-xs">
-                    <a class="text-blue-400 hover:text-blue-500" href="df">Forgot Password</a>
-                    <span class="mx-2 text-gray-300">/</span>
-                    <a class="text-blue-400 hover:text-blue-500" href="df">Sign Up</a>
-                </div>
-            </form>
-        </div>
+        <section class="px-4 py-24 mx-auto max-w-7xl">
+            <div class="w-full mx-auto space-y-5 sm:w-8/12 md:w-6/12 lg:w-4/12 xl:w-3/12">
+                <h1 class="mb-1 text-xl font-medium text-center text-gray-800 md:text-3xl">Log in to your account</h1>
+                <form class="space-y-4">
+                    <label class="block">
+                        <span class="block mb-1 text-xs font-medium text-gray-700">Your Email</span>
+                        <input class="form-input" type="email" placeholder="Ex. james@bond.com" inputmode="email" required />
+                    </label>
+                    <label class="block">
+                        <span class="block mb-1 text-xs font-medium text-gray-700">Your Password</span>
+                        <input class="form-input" type="password" placeholder="••••••••" required />
+                    </label>
+                    <input type="submit" class="w-full py-3 btn btn-primary" value="Login" />
+                </form>
+            </div>
+            <p className="mb-4 space-y-2 text-sm text-left text-gray-600 sm:text-center sm:space-y-0 mt-4">
+                <a href="/signup" className="w-full btn btn-sm btn-link sm:w-auto">Create an account</a>
+            </p>
+        </section>
     )
 }
