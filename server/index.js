@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
 
-app.get('/health', (_req, res) => {
-    res.send('ok')
+app.get('/status', (_req, res) => {
+    res.send('working')
 })
 
 app.use('/api/auth', require('./routes/auth'))

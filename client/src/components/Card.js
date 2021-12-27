@@ -2,110 +2,25 @@ import React from 'react'
 
 export const Card = () => {
     return (
-        <div className="
-          relative
-          items-center
-          w-full
-          px-5
-          py-12
-          mx-auto
-          md:px-12
-          lg:px-24
-          max-w-7xl
-        ">
-            <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-                <div className="p-6">
-                    <img className="object-cover object-center w-full
-                mb-8
-                lg:h-48
-                md:h-36
-                rounded-xl" src="https://d33wubrfki0l68.cloudfront.net/89984e38d378089d8d7b47935660ae475a226df7/f6d8b/images/placeholders/sqaurecard.svg" alt="blog" />
-                    <h1 className="
-                mx-auto
-                mb-8
-                text-2xl
-                font-semibold
-                leading-none
-                tracking-tighter
-                text-neutral-600
-                lg:text-3xl"> Short headline. </h1>
-                    <p className="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML & Next.js. </p>
-                    <div className="mt-4">
-                        <a href="v" className="
-                  inline-flex
-                  items-center
-                  mt-4
-                  font-semibold
-                  text-blue-600
-                  lg:mb-0
-                  hover:text-neutral-600
-                " title="read more"> Read More » </a>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3 m-6">
+            <div className="card">
+                <div className="flex items-center justify-center h-32 card-image">
+                    <div className="spinner" role="status">
+                        <span className="sr-only">Loading...</span>
                     </div>
                 </div>
-                {/* <div className="p-6">
-                    <img className="
-                object-cover object-center
-                w-full
-                mb-8
-                lg:h-48
-                md:h-36
-                rounded-xl
-              " src="https://d33wubrfki0l68.cloudfront.net/89984e38d378089d8d7b47935660ae475a226df7/f6d8b/images/placeholders/sqaurecard.svg" alt="blog" />
-                    <h1 className="
-                mx-auto
-                mb-8
-                text-2xl
-                font-semibold
-                leading-none
-                tracking-tighter
-                text-neutral-600
-                lg:text-3xl
-              "> Short headline. </h1>
-                    <p className="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML & Next.js. </p>
-                    <div className="mt-4">
-                        <a href="cv" className="
-                  inline-flex
-                  items-center
-                  mt-4
-                  font-semibold
-                  text-blue-600
-                  lg:mb-0
-                  hover:text-neutral-600
-                " title="read more"> Read More » </a>
+                <img className="rounded-t card-image" alt='Poster' src="/e1mjopzAS2KNsvpbpahQ1a6SkSn.jpg" />
+                <div>
+                    <div className="card-header">Movie Title<button className="btn btn-icon btn-sm btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button></div>
+                </div>
+                <div className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+                        <svg className="h-4 fill-yellow-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="black" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                        </svg>
+                        <span className="px-1 font-bold text-gray-700 dark:text-gray-200">8.7</span>
                     </div>
-                </div> */}
-                {/* <div className="p-6">
-                    <img className="
-                object-cover object-center
-                w-full
-                mb-8
-                lg:h-48
-                md:h-36
-                rounded-xl
-              " src="https://d33wubrfki0l68.cloudfront.net/89984e38d378089d8d7b47935660ae475a226df7/f6d8b/images/placeholders/sqaurecard.svg" alt="blog" />
-                    <h1 className="
-                mx-auto
-                mb-8
-                text-2xl
-                font-semibold
-                leading-none
-                tracking-tighter
-                text-neutral-600
-                lg:text-3xl
-              "> Short headline. </h1>
-                    <p className="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML & Next.js. </p>
-                    <div className="mt-4">
-                        <a href="cv" className="
-                  inline-flex
-                  items-center
-                  mt-4
-                  font-semibold
-                  text-blue-600
-                  lg:mb-0
-                  hover:text-neutral-600
-                " title="read more"> Read More » </a>
-                    </div>
-                </div> */}
+                </div>
             </div>
         </div>
     )
