@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useHistory } from "react-router-dom";
+
 
 export const Card = () => {
+    let history = useHistory();
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+
+        }
+        else {
+            history.push("/login")
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
     return (
         <div className="grid grid-cols-1 gap-3 md:grid-cols-3 m-6">
             <div className="card">

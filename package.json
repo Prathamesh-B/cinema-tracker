@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server",
     "heroku-prebuild": "cd client && npm install && npm run build",
-    "dev": "nodemon server",
+    "dev": "concurrently \"cd client && npm start\" \"nodemon server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "pg": "^8.7.1"
   },
   "devDependencies": {
+    "concurrently": "^6.5.1",
     "nodemon": "^2.0.15"
   }
 }

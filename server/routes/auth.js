@@ -57,17 +57,14 @@ router.post('/login', [
     try {
         user = await db.query('SELECT * FROM users WHERE email = $1', [req.body.email])
         if (user.rowCount === 0) {
-            success = false
             return res.status(400).json({ success, error: "Please try to login with correct credentials" });
         }
         userPassword = await db.query('SELECT password FROM users WHERE email = $1', [email])
         if (userPassword.rowCount === 0) {
-            success = false
             return res.status(400).json({ success, error: "Please try to login with correct credentials" });
         }
         const passwordCompare = await bcrypt.compare(password, userPassword.rows[0].password);
         if (!passwordCompare) {
-            success = false
             return res.status(400).json({ success, error: "Please try to login with correct credentials" });
         }
         userId = await db.query('SELECT id FROM users WHERE email = $1', [email])

@@ -1,7 +1,13 @@
 import React from 'react'
+// import { Link, useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+    // let history = useHistory()
+    // const handleLogout = () => {
+    //     localStorage.removeItem('token')
+    //     history.push('/login')
+    // }
     return (
         <nav className="bg-white shadow dark:bg-gray-800">
             <div className="container px-6 py-4 mx-auto">
@@ -29,11 +35,9 @@ export const Navbar = () => {
                             <div className="p-1.5 w-full sm:w-auto overflow-hidden bg-white rounded-lg dark:bg-gray-800 ">
                                 <div className="space-y-2 sm:space-y-0 sm:flex sm:-mx-1">
                                     <Link to="/login" className="mx-1 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-900 focus:outline-none focus:ring focus:ring-purple-900 focus:ring-opacity-80">
-                                        Login
-                                    </Link>
+                                        Login</Link>
                                     <Link to="/signup" className="mx-1 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-900 focus:outline-none focus:ring focus:ring-purple-900 focus:ring-opacity-80">
-                                        Signup
-                                    </Link>
+                                        Signup</Link>
                                 </div>
                             </div>
                             <button type="button" className="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
