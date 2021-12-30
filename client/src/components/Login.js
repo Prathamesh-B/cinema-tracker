@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link, useHistory } from "react-router-dom";
 
 export const Login = () => {
@@ -7,7 +7,7 @@ export const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('https://cinema-tracker.herokuapp.com/api/auth/login', {
+        const response = await fetch(`${process.env.REACT_APP_API_HOST}/api/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
